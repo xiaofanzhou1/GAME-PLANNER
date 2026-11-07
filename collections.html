@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Library | GamePlanner+</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="GAME-PLANNER/assets/css/styles.css">
+    </head>
+
+    <body>
+        <header class="container py-3">
+            <section class="d-flex align-items-center gap-3 mb-4">
+                <img src="GAME-PLANNER/assets/images/logo.png"
+                    alt="GamePlanner+ Logo"
+                    class="navbar-logo">
+                <h1 class="m-0">GamePlanner+</h1>
+            </section>
+            <nav class="main-navbar d-flex justify-content-evenly
+                        align-items-center flex-wrap gap-2 p-2">
+                <a href="index.html" class="btn btn-outline-purple">
+                    Home
+                </a>
+                <a href="collections.html"
+                class="btn btn-nav active">
+                    My Library
+                </a>
+                <a href="#" class="btn btn-outline-purple">
+                    Game Explorer
+                </a>
+                <a href="#" class="btn btn-outline-purple">
+                    GameGuide
+                </a>
+                <a href="#" class="btn btn-outline-purple">
+                    About Us
+                </a>
+            </nav>
+        </header>
+        <main class="container py-4">
+            <section>
+                <h2 id="collections-title">My Collections</h2>
+                <p class="secondary-text">
+                    Organize your games, track progress
+                    and manage your collections.
+                </p>
+            </section>
+            <h3>Your current collections</h3>
+            <section class="row g-4">
+                <section class="col-12 col-md-6">
+                    <article class="gameCard p-3 h-100">
+                        <img src="GAME-PLANNER/assets/images/iconos/iconoPlayingNow.png"
+                            alt="GamePlanner+ Logo"
+                            class="navbar-logo iconCard">
+                        <h4>Playing Now</h4>
+                        <p>Games you are playing.</p>
+                        <p class="gamesCount">5 games</p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100">
+                                    View
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-purple active w-100">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-danger w-100">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="col-12 col-md-6">
+                    <article class="gameCard p-3 h-100">
+                        <img src="GAME-PLANNER/assets/images/iconos/iconoBacklog.png"
+                            alt="GamePlanner+ Logo"
+                            class="navbar-logo iconCard">
+                        <h4>Backlog</h4>
+                        <p>Games you want to play.</p>
+                        <p class="gamesCount">5 games</p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100">
+                                    View
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-purple active w-100">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-danger w-100">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="col-12 col-md-6">
+                    <article class="gameCard p-3 h-100">
+                        <img src="GAME-PLANNER/assets/images/iconos/iconoCompleted.png"
+                            alt="GamePlanner+ Logo"
+                            class="navbar-logo iconCard">
+                        <h4>Completed</h4>
+                        <p>Games you have finished.</p>
+                        <p class="gamesCount">5 games</p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100">
+                                    View
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-purple active w-100">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-danger w-100">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="col-12 col-md-6">
+                    <article class="gameCard p-3 h-100">
+                        <img src="GAME-PLANNER/assets/images/iconos/iconoFavoritos.png"
+                            alt="GamePlanner+ Logo"
+                            class="navbar-logo iconCard">
+                        <h4>Favorites</h4>
+                        <p>Your all-time favourite games.</p>
+                        <p class="gamesCount">5 games</p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <button class="btn btn-primary w-100">
+                                    View
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-purple active w-100">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-danger w-100">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <br>
+            <h3>Create collection</h3>
+            <p class="secondary-text">Create your own custom game collection</p>
+            <section class="col-12 col-md-6">
+                <div class="mb-3">
+                    <label for="collectionName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="collectionName" placeholder="Speedruning">
+                </div>
+                <div class="mb-3">
+                    <label for="categoryName" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="categoryCollection" placeholder="FPS">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                    <button type="submit" class="btn btn-success">
+                        Create Collection
+                    </button>
+            </section>
+        </main>
+    </body>
+</html>
