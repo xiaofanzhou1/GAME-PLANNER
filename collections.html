@@ -159,22 +159,33 @@
             <br>
             <h3>Create collection</h3>
             <p class="secondary-text">Create your own custom game collection</p>
-            <section class="col-12 col-md-6">
-                <div class="mb-3">
-                    <label for="collectionName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="collectionName" placeholder="Speedruning">
-                </div>
-                <div class="mb-3">
-                    <label for="categoryName" class="form-label">Category</label>
-                    <input type="text" class="form-control" id="categoryCollection" placeholder="FPS">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
+            <section class="mt-4">
+                <form class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="collectionName" class="form-label">
+                            Name
+                        </label>
+                        <input type="text" class="form-control" id="collectionName" placeholder="Speedrunning" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="categoryCollection" class="form-label">
+                            Category
+                        </label>
+                        <input type="text" class="form-control" id="categoryCollection" placeholder="FPS" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="collectionDescription" class="form-label">
+                            Description
+                        </label>
+                        <textarea class="form-control" id="collectionDescription" rows="3" placeholder="Describe your collection..."></textarea>
+                    </div>
+
                     <button type="submit" class="btn btn-success">
                         Create Collection
                     </button>
+                </form>
             </section>
         </main>
     </body>
