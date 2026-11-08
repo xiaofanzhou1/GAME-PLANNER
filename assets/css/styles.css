@@ -1,23 +1,36 @@
-/*Fondo principal	Negro azulado	        #0F111A
-Fondo secundario	Azul muy oscuro	        #151927
-Cards	            Gris azulado oscuro	    #1C2133
-Cards hover	        Azul violeta oscuro	    #252A42
-Morado principal	Violeta	                #7C5CFF
-Morado claro	    Lavanda	                #9A82FF
-Azul principal	    Azul eléctrico suave	#4F7CFF
-Azul claro	        Celeste azulado	        #6EA8FF
-Texto principal	    Blanco frío	            #F4F6FB
-Texto secundario	Gris azulado	        #AEB5C6
-Bordes	            Gris violeta	        #343A55
-Éxito / jugando 	Verde suave	            #48D597
-*/
-
 :root {
     background-color: #0F111A;
 }
 
+body {
+    background-color: #0F111A;
+    color: #F4F6FB;
+}
+
+h1, h2, h3 {
+    color: #F4F6FB;
+}
+
 p {
     color: #F4F6FB;
+}
+
+a {
+    text-decoration: none;
+}
+
+.secondary-text {
+    color: #AEB5C6;
+}
+
+.textSize {
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
 nav {
@@ -27,6 +40,41 @@ nav {
     border-radius: 24px;
 }
 
+.main-navbar {
+    background-color: #151927;
+    border: 5px solid #343A55;
+    border-radius: 24px;
+}
+
+.btn-purple {
+    background-color: #7C5CFF;
+    border: 1px solid #7C5CFF;
+    color: #FFFFFF;
+}
+
+.btn-purple:hover {
+    background-color: #9A82FF;
+    border-color: #9A82FF;
+    color: #FFFFFF;
+}
+
+.btn-outline-purple {
+    background-color: transparent;
+    border: 1px solid #7C5CFF;
+    color: #9A82FF;
+}
+
+.btn-outline-purple:hover {
+    background-color: #7C5CFF;
+    border-color: #7C5CFF;
+    color: #FFFFFF;
+}
+
+.btn-nav.active {
+    background-color: #7C5CFF;
+    border: 1px solid #7C5CFF;
+    color: #FFFFFF;
+}
 
 .welcome {
     background-color: #151927;
@@ -39,17 +87,13 @@ nav {
     font-size: 1.5rem;
 }
 
-.textSize {
-    font-size: 1.2rem
-}
-
 .featuresContainer {
-    background-color:#151927;
+    background-color: #151927;
     border: 5px solid #343A55;
     padding: 10px;
     border-radius: 24px;
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .featuresSection {
@@ -83,26 +127,64 @@ nav {
     border: 4px solid #6EA8FF;
 }
 
-a{
-    text-decoration: none;
-}
-
-h1 {
+.gameCard {
+    background-color: #1C2133;
+    border: 1px solid #343A55;
+    border-radius: 12px;
     color: #F4F6FB;
 }
 
-h2 {
+.gameCard h4 {
     color: #F4F6FB;
 }
 
-h3 {
-    color: #F4F6FB
+.gameCard:hover {
+    background-color: #252A42;
+    border-color: #7C5CFF;
 }
 
-button {
-    background-color: #7C5CFF;
+
+.explorerPanel {
+    background-color: #1C2133;
+    border: 1px solid #343A55;
+    border-radius: 12px;
 }
 
-button:hover {
-    background-color: #5A3FD1;
+.explorerPanel h3,
+.explorerPanel h4 {
+    color: #F4F6FB;
+}
+
+
+.explorerPanel .form-select,
+#sortGames,
+#searchGames {
+    background-color: #252A42;
+    color: #F4F6FB;
+    border: 1px solid #343A55;
+}
+
+#searchGames::placeholder {
+    color: #AEB5C6;
+}
+
+.explorerPanel .form-select:focus,
+#sortGames:focus,
+#searchGames:focus {
+    border-color: #7C5CFF;
+    box-shadow: 0 0 0 3px #7C5CFF33;
+}
+
+
+.explorerGameImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .explorerGameImage {
+        height: 200px;
+    }
 }
