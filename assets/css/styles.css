@@ -1,108 +1,134 @@
-/*Fondo principal	Negro azulado	        #0F111A
-Fondo secundario	Azul muy oscuro	        #151927
-Cards	            Gris azulado oscuro	    #1C2133
-Cards hover	        Azul violeta oscuro	    #252A42
-Morado principal	Violeta	                #7C5CFF
-Morado claro	    Lavanda	                #9A82FF
-Azul principal	    Azul eléctrico suave	#4F7CFF
-Azul claro	        Celeste azulado	        #6EA8FF
-Texto principal	    Blanco frío	            #F4F6FB
-Texto secundario	Gris azulado	        #AEB5C6
-Bordes	            Gris violeta	        #343A55
-Éxito / jugando 	Verde suave	            #48D597
-*/
 
 :root {
-    background-color: #0F111A;
+    --bg-primary: #0F111A;
+    --bg-secondary: #151927;
+
+    --card-bg: #1C2133;
+    --card-hover: #252A42;
+
+    --purple-primary: #7C5CFF;
+    --purple-light: #9A82FF;
+
+    --blue-primary: #4F7CFF;
+    --blue-light: #6EA8FF;
+
+    --text-primary: #F4F6FB;
+    --text-secondary: #AEB5C6;
+
+    --border-color: #343A55;
+
+    --success-color: #48D597;
 }
 
-p {
-    color: #F4F6FB;
+/* GENERAL */
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
 }
 
-nav {
-    background-color: #151927;
-    border: 5px solid #343A55;
-    padding: 10px;
-    border-radius: 24px;
+h1, h2, h3 {
+    color: var(--text-primary);
 }
 
-
-.welcome {
-    background-color: #151927;
-    border: 5px solid #343A55;
-    padding: 10px;
-    border-radius: 24px;
+.secondary-text {
+    color: var(--text-secondary);
 }
 
-#welcomeMessage {
-    font-size: 1.5rem;
+/* LOGO */
+
+.navbar-logo {
+    width: 70px;
+    height: auto;
 }
 
-.textSize {
-    font-size: 1.2rem
+/* NAVBAR */
+
+.main-navbar {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
 }
 
-.featuresContainer {
-    background-color:#151927;
-    border: 5px solid #343A55;
-    padding: 10px;
-    border-radius: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px
+/* NAVIGATION BUTTONS */
+
+.btn-nav {
+    --bs-btn-color: var(--text-secondary);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-bg: var(--card-hover);
+    --bs-btn-hover-border-color: transparent;
+
+    --bs-btn-active-color: var(--text-primary);
+    --bs-btn-active-bg: var(--purple-primary);
+    --bs-btn-active-border-color: var(--purple-primary);
+
+    padding: 10px 18px;
 }
 
-.featuresSection {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    background-color: #151927;
-    padding: 5px;
-    border-radius: 24px;
+.btn-purple {
+    --bs-btn-color: #F4F6FB;
+    --bs-btn-bg: #7C5CFF;
+    --bs-btn-border-color: #7C5CFF;
+
+    --bs-btn-hover-color: #F4F6FB;
+    --bs-btn-hover-bg: #9A82FF;
+    --bs-btn-hover-border-color: #9A82FF;
+
+    --bs-btn-active-color: #F4F6FB;
+    --bs-btn-active-bg: #7C5CFF;
+    --bs-btn-active-border-color: #7C5CFF;
 }
 
-.feature {
-    margin: 15px;
-    padding: 15px;
-    background-color: #1C2133;
+.btn-outline-purple {
+    --bs-btn-color: #9A82FF;
+    --bs-btn-border-color: #7C5CFF;
+
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: #7C5CFF;
+    --bs-btn-hover-border-color: #7C5CFF;
+
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: #7C5CFF;
+    --bs-btn-active-border-color: #7C5CFF;
 }
 
-.feature:hover {
-    background-color: #252A42;
+/* CURRENT PAGE */
+
+.btn-nav.active {
+    --bs-btn-color: var(--text-primary);
+    --bs-btn-bg: var(--purple-primary);
+    --bs-btn-border-color: var(--purple-primary);
+
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-bg: var(--purple-light);
+    --bs-btn-hover-border-color: var(--purple-light);
 }
 
-.libraryFeature {
-    border: 4px solid #7C5CFF;
+/* CARDS */
+
+.gameCard {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 3px solid var(--border-color);
+    transition: background-color 0.3s;
+    border-radius:20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.sessionsFeature {
-    border: 4px solid #4F7CFF;
+.gameCard:hover {
+    background-color: var(--card-hover);
+    background-color: var(--card-hover);
+    transform: scale(1.03);
 }
 
-.discoverFeature {
-    border: 4px solid #6EA8FF;
+.iconCard {
+    margin-bottom: 15px;
 }
 
-a{
-    text-decoration: none;
-}
-
-h1 {
-    color: #F4F6FB;
-}
-
-h2 {
-    color: #F4F6FB;
-}
-
-h3 {
-    color: #F4F6FB
-}
-
-button {
-    background-color: #7C5CFF;
-}
-
-button:hover {
-    background-color: #5A3FD1;
+.gamesCount {
+    color: var(--purple-light);
+    font-size: 0.875rem;
 }
