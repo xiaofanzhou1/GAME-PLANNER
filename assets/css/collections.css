@@ -1,0 +1,39 @@
+
+/* COLLECTION ICONS */
+
+.iconCard {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* GAME COUNTER */
+
+.gamesCount {
+    color: var(--purple-light);
+    font-size: 0.875rem;
+}
+
+/* CREATE COLLECTION FORM */
+
+#collectionName,
+#categoryCollection,
+#collectionDescription {
+    background-color: var(--card-hover);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+#collectionName::placeholder,
+#categoryCollection::placeholder,
+#collectionDescription::placeholder {
+    color: var(--text-secondary);
+}
+
+#collectionName:focus,
+#categoryCollection:focus,
+#collectionDescription:focus {
+    border-color: var(--purple-primary);
+    box-shadow: 0 0 0 3px #7C5CFF33;
+}

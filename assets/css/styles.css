@@ -1,18 +1,34 @@
 :root {
-    background-color: #0F111A;
+    --bg-primary: #0F111A;
+    --bg-secondary: #151927;
+
+    --card-bg: #1C2133;
+    --card-hover: #252A42;
+
+    --purple-primary: #7C5CFF;
+    --purple-light: #9A82FF;
+
+    --blue-primary: #4F7CFF;
+    --blue-light: #6EA8FF;
+
+    --text-primary: #F4F6FB;
+    --text-secondary: #AEB5C6;
+
+    --border-color: #343A55;
+    --success-color: #48D597;
 }
 
 body {
-    background-color: #0F111A;
-    color: #F4F6FB;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 h1, h2, h3 {
-    color: #F4F6FB;
+    color: var(--text-primary);
 }
 
 p {
-    color: #F4F6FB;
+    color: var(--text-primary);
 }
 
 a {
@@ -20,7 +36,7 @@ a {
 }
 
 .secondary-text {
-    color: #AEB5C6;
+    color: var(--text-secondary);
 }
 
 .textSize {
@@ -29,122 +45,103 @@ a {
 
 .navbar-logo {
     width: 70px;
-    height: 70px;
+    height: auto;
     object-fit: contain;
 }
 
-nav {
-    background-color: #151927;
-    border: 5px solid #343A55;
-    padding: 10px;
-    border-radius: 24px;
+.main-navbar {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
 }
 
-.main-navbar {
-    background-color: #151927;
-    border: 5px solid #343A55;
-    border-radius: 24px;
+.btn-nav {
+    --bs-btn-color: var(--text-secondary);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-bg: var(--card-hover);
+    --bs-btn-hover-border-color: transparent;
+
+    --bs-btn-active-color: var(--text-primary);
+    --bs-btn-active-bg: var(--purple-primary);
+    --bs-btn-active-border-color: var(--purple-primary);
+
+    padding: 10px 18px;
 }
 
 .btn-purple {
-    background-color: #7C5CFF;
-    border: 1px solid #7C5CFF;
-    color: #FFFFFF;
-}
+    --bs-btn-color: var(--text-primary);
+    --bs-btn-bg: var(--purple-primary);
+    --bs-btn-border-color: var(--purple-primary);
 
-.btn-purple:hover {
-    background-color: #9A82FF;
-    border-color: #9A82FF;
-    color: #FFFFFF;
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-bg: var(--purple-light);
+    --bs-btn-hover-border-color: var(--purple-light);
+
+    --bs-btn-active-color: var(--text-primary);
+    --bs-btn-active-bg: var(--purple-primary);
+    --bs-btn-active-border-color: var(--purple-primary);
 }
 
 .btn-outline-purple {
-    background-color: transparent;
-    border: 1px solid #7C5CFF;
-    color: #9A82FF;
-}
+    --bs-btn-color: var(--purple-light);
+    --bs-btn-border-color: var(--purple-primary);
 
-.btn-outline-purple:hover {
-    background-color: #7C5CFF;
-    border-color: #7C5CFF;
-    color: #FFFFFF;
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: var(--purple-primary);
+    --bs-btn-hover-border-color: var(--purple-primary);
+
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: var(--purple-primary);
+    --bs-btn-active-border-color: var(--purple-primary);
 }
 
 .btn-nav.active {
-    background-color: #7C5CFF;
-    border: 1px solid #7C5CFF;
-    color: #FFFFFF;
+    --bs-btn-color: var(--text-primary);
+    --bs-btn-bg: var(--purple-primary);
+    --bs-btn-border-color: var(--purple-primary);
+
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-bg: var(--purple-light);
+    --bs-btn-hover-border-color: var(--purple-light);
+}
+
+.gameCard {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.gameCard h4 {
+    color: var(--text-primary);
+}
+
+.gameCard:hover {
+    background-color: var(--card-hover);
+    border-color: var(--purple-primary);
+    transform: scale(1.03);
 }
 
 .welcome {
-    background-color: #151927;
-    border: 5px solid #343A55;
+    background-color: var(--bg-secondary);
+    border: 5px solid var(--border-color);
     padding: 10px;
     border-radius: 24px;
 }
 
-#welcomeMessage {
-    font-size: 1.5rem;
-}
-
 .featuresContainer {
-    background-color: #151927;
-    border: 5px solid #343A55;
+    background-color: var(--bg-secondary);
+    border: 5px solid var(--border-color);
     padding: 10px;
     border-radius: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.featuresSection {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    background-color: #151927;
-    padding: 5px;
-    border-radius: 24px;
-}
-
-.feature {
-    margin: 15px;
-    padding: 15px;
-    background-color: #1C2133;
-}
-
-.feature:hover {
-    background-color: #252A42;
-}
-
-.libraryFeature {
-    border: 4px solid #7C5CFF;
-}
-
-.sessionsFeature {
-    border: 4px solid #4F7CFF;
-}
-
 .discoverFeature {
-    border: 4px solid #6EA8FF;
-}
-
-.gameCard {
-    background-color: #1C2133;
-    border: 1px solid #343A55;
-    border-radius: 12px;
-    color: #F4F6FB;
-}
-
-.gameCard h4 {
-    color: #F4F6FB;
-}
-
-.gameCard:hover {
-    background-color: #252A42;
-    border-color: #7C5CFF;
-}
-
-@media (max-width: 767px) {
-    .explorerGameImage {
-        height: 200px;
-    }
+    border: 4px solid var(--blue-light);
 }
