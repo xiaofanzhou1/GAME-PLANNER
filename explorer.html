@@ -1,0 +1,318 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Game Explorer | GamePlanner+</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/explorer.css">
+    </head>
+    <body>
+        <header class="container py-3">
+            <section class="d-flex align-items-center gap-3 mb-4">
+                <img src="assets/images/logo.png"
+                     alt="GamePlanner+ Logo"
+                     class="navbar-logo">
+                <h1 class="m-0">GamePlanner+</h1>
+            </section>
+            <nav class="main-navbar d-flex justify-content-evenly align-items-center flex-wrap gap-2 p-2">
+                <a href="index.html" class="btn btn-outline-purple">
+                    Home
+                </a>
+                <a href="collections.html" class="btn btn-outline-purple">
+                    My Library
+                </a>
+                <a href="explorer.html" class="btn btn-nav active" aria-current="page">
+                    Game Explorer
+                </a>
+                <a href="#" class="btn btn-outline-purple">
+                    GameGuide
+                </a>
+                <a href="#" class="btn btn-outline-purple">
+                    About Us
+                </a>
+            </nav>
+        </header>
+
+        <main class="container py-4">
+            <section class="mb-4">
+                <h2>Game Explorer</h2>
+                <p class="secondary-text">
+                    Discover new games and add them to your collections.
+                </p>
+            </section>
+
+            <section class="row g-4">
+                <aside class="col-12 col-lg-3">
+                    <section class="explorerPanel p-3">
+                        <h3 class="h5 mb-4">Filters</h3>
+                        <h4 class="h6">Genre</h4>
+                        <select class="form-select mb-4" id="genreFilter">
+                            <option value="all">All genres</option>
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="rpg">RPG</option>
+                            <option value="strategy">Strategy</option>
+                            <option value="racing">Racing</option>
+                            <option value="simulation">Simulation</option>
+                        </select>
+
+                        <h4 class="h6">Platform</h4>
+
+                        <select class="form-select mb-4" id="platformFilter">
+                            <option value="all">All platforms</option>
+                            <option value="pc">PC</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="switch">Nintendo Switch</option>
+                        </select>
+
+                        <h4 class="h6">Release Year</h4>
+
+                        <select class="form-select mb-4" id="yearFilter">
+                            <option value="all">All years</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="older">Older</option>
+                        </select>
+
+                        <button type="button" class="btn btn-outline-purple w-100">
+                            Clear Filters
+                        </button>
+
+                    </section>
+
+                </aside>
+
+                <section class="col-12 col-lg-9">
+
+                    <section class="row g-3 mb-4">
+
+                        <section class="col-12 col-md-8">
+                            <input type="search"
+                                   class="form-control"
+                                   id="searchGames"
+                                   placeholder="Search for games...">
+                        </section>
+
+                        <section class="col-12 col-md-4">
+                            <select class="form-select" id="sortGames">
+                                <option value="popular">Most popular</option>
+                                <option value="name">Name A-Z</option>
+                                <option value="newest">Newest</option>
+                            </select>
+                        </section>
+
+                    </section>
+
+                    <!-- GAMES GRID -->
+                    <section class="row g-4">
+
+                        <!-- GAME 1 -->
+                        <article class="col-12 col-md-6 col-xl-4">
+
+                            <section class="gameCard h-100 p-3 d-flex flex-column">
+
+                                <img src="assets/images/Left4Dead2.png"
+                                     class="explorerGameImage mb-3"
+                                     alt="Game 1 cover">
+
+                                <h4>Left 4 Dead 2</h4>
+
+                                <p class="secondary-text mb-2">
+                                    Action / Adventure
+                                </p>
+
+                                <p class="secondary-text">
+                                    PC, PlayStation, Xbox
+                                </p>
+
+                                <section class="d-flex gap-2 mt-auto">
+                                    <a href="#" class="btn btn-outline-purple w-50">
+                                        View
+                                    </a>
+
+                                    <button type="button" class="btn btn-purple w-50">
+                                        Add
+                                    </button>
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <!-- GAME 2 -->
+                        <article class="col-12 col-md-6 col-xl-4">
+
+                            <section class="gameCard h-100 p-3 d-flex flex-column">
+
+                                <img src="assets/images/TheWitcher3.jpg"
+                                     class="explorerGameImage mb-3"
+                                     alt="Game 2 cover">
+
+                                <h4>The Witcher 3: Wild Hunt</h4>
+
+                                <p class="secondary-text mb-2">
+                                    RPG / Fantasy
+                                </p>
+
+                                <p class="secondary-text">
+                                    PC, PlayStation
+                                </p>
+
+                                <section class="d-flex gap-2 mt-auto">
+                                    <a href="#" class="btn btn-outline-purple w-50">
+                                        View
+                                    </a>
+
+                                    <button type="button" class="btn btn-purple w-50">
+                                        Add
+                                    </button>
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <article class="col-12 col-md-6 col-xl-4">
+                            <section class="gameCard h-100 p-3 d-flex flex-column">
+                                <img src="assets/images/Cuphead.png"
+                                     class="explorerGameImage mb-3"
+                                     alt="Game 3 cover">
+                                <h4>Cuphead</h4>
+
+                                <p class="secondary-text mb-2">
+                                    Racing
+                                </p>
+
+                                <p class="secondary-text">
+                                    PC, Xbox, Nintendo Switch
+                                </p>
+
+                                <section class="d-flex gap-2 mt-auto">
+                                    <a href="#" class="btn btn-outline-purple w-50">
+                                        View
+                                    </a>
+
+                                    <button type="button" class="btn btn-purple w-50">
+                                        Add
+                                    </button>
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <!-- GAME 4 -->
+                        <article class="col-12 col-md-6 col-xl-4">
+
+                            <section class="gameCard h-100 p-3 d-flex flex-column">
+
+                                <img src="assets/images/RE9.jpg"
+                                     class="explorerGameImage mb-3"
+                                     alt="Game 4 cover">
+
+                                <h4>Resident Evil Requiem</h4>
+
+                                <p class="secondary-text mb-2">
+                                    Survival / Horror
+                                </p>
+
+                                <p class="secondary-text">
+                                    PC, PlayStation, Xbox
+                                </p>
+
+                                <section class="d-flex gap-2 mt-auto">
+                                    <a href="#" class="btn btn-outline-purple w-50">
+                                        View
+                                    </a>
+
+                                    <button type="button" class="btn btn-purple w-50">
+                                        Add
+                                    </button>
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <!-- GAME 5 -->
+                        <article class="col-12 col-md-6 col-xl-4">
+
+                            <section class="gameCard h-100 p-3 d-flex flex-column">
+
+                                <img src="assets/images/bills must.png"
+                                     class="explorerGameImage mb-3"
+                                     alt="Game 5 cover">
+
+                                <h4>Bills must be paid</h4>
+
+                                <p class="secondary-text mb-2">
+                                    Strategy
+                                </p>
+
+                                <p class="secondary-text">
+                                    PC
+                                </p>
+
+                                <section class="d-flex gap-2 mt-auto">
+                                    <a href="#" class="btn btn-outline-purple w-50">
+                                        View
+                                    </a>
+
+                                    <button type="button" class="btn btn-purple w-50">
+                                        Add
+                                    </button>
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                        <!-- GAME 6 -->
+                        <article class="col-12 col-md-6 col-xl-4">
+
+                            <section class="gameCard h-100 p-3 d-flex flex-column">
+
+                                <img src="assets/images/games/game6.jpg"
+                                     class="explorerGameImage mb-3"
+                                     alt="Game 6 cover">
+
+                                <h4>Game 6</h4>
+
+                                <p class="secondary-text mb-2">
+                                    Adventure / Open World
+                                </p>
+
+                                <p class="secondary-text">
+                                    PC, PlayStation, Xbox
+                                </p>
+
+                                <section class="d-flex gap-2 mt-auto">
+                                    <a href="#" class="btn btn-outline-purple w-50">
+                                        View
+                                    </a>
+
+                                    <button type="button" class="btn btn-purple w-50">
+                                        Add
+                                    </button>
+                                </section>
+
+                            </section>
+
+                        </article>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </body>
+</html>

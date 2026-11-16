@@ -1,0 +1,44 @@
+/* GAME EXPLORER */
+
+.explorerPanel {
+    background-color: #1C2133;
+    border: 1px solid #343A55;
+    border-radius: 12px;
+}
+
+.explorerPanel h3,
+.explorerPanel h4 {
+    color: #F4F6FB;
+}
+
+.explorerPanel .form-select,
+#sortGames,
+#searchGames {
+    background-color: #252A42;
+    color: #F4F6FB;
+    border: 1px solid #343A55;
+}
+
+#searchGames::placeholder {
+    color: #AEB5C6;
+}
+
+.explorerPanel .form-select:focus,
+#sortGames:focus,
+#searchGames:focus {
+    border-color: #7C5CFF;
+    box-shadow: 0 0 0 3px #7C5CFF33;
+}
+
+.explorerGameImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .explorerGameImage {
+        height: 200px;
+    }
+}

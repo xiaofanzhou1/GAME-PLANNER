@@ -1,4 +1,3 @@
-
 :root {
     --bg-primary: #0F111A;
     --bg-secondary: #151927;
@@ -19,8 +18,6 @@
     --success-color: #48D597;
 }
 
-/* GENERAL */
-
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -30,26 +27,33 @@ h1, h2, h3 {
     color: var(--text-primary);
 }
 
+p {
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
 .secondary-text {
     color: var(--text-secondary);
 }
 
-/* LOGO */
+.textSize {
+    font-size: 1.2rem;
+}
 
 .navbar-logo {
     width: 70px;
     height: auto;
+    object-fit: contain;
 }
-
-/* NAVBAR */
 
 .main-navbar {
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
 }
-
-/* NAVIGATION BUTTONS */
 
 .btn-nav {
     --bs-btn-color: var(--text-secondary);
@@ -94,8 +98,6 @@ h1, h2, h3 {
     --bs-btn-active-border-color: var(--purple-primary);
 }
 
-/* CURRENT PAGE */
-
 .btn-nav.active {
     --bs-btn-color: var(--text-primary);
     --bs-btn-bg: var(--purple-primary);
@@ -106,8 +108,6 @@ h1, h2, h3 {
     --bs-btn-hover-border-color: var(--purple-light);
 }
 
-/* SHARED CARDS */
-
 .gameCard {
     background-color: var(--card-bg);
     color: var(--text-primary);
@@ -116,7 +116,32 @@ h1, h2, h3 {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.gameCard h4 {
+    color: var(--text-primary);
+}
+
 .gameCard:hover {
     background-color: var(--card-hover);
+    border-color: var(--purple-primary);
     transform: scale(1.03);
+}
+
+.welcome {
+    background-color: var(--bg-secondary);
+    border: 5px solid var(--border-color);
+    padding: 10px;
+    border-radius: 24px;
+}
+
+.featuresContainer {
+    background-color: var(--bg-secondary);
+    border: 5px solid var(--border-color);
+    padding: 10px;
+    border-radius: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.discoverFeature {
+    border: 4px solid var(--blue-light);
 }
