@@ -43,10 +43,20 @@ a {
     font-size: 1.2rem;
 }
 
+
 .navbar-logo {
     width: 70px;
-    height: auto;
+    height: 70px;
     object-fit: contain;
+    flex-shrink: 0;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--text-primary);
 }
 
 .main-navbar {
@@ -124,13 +134,6 @@ a {
     background-color: var(--card-hover);
     border-color: var(--purple-primary);
     transform: scale(1.03);
-}
-
-.welcome {
-    background-color: var(--bg-secondary);
-    border: 5px solid var(--border-color);
-    padding: 10px;
-    border-radius: 24px;
 }
 
 .featuresContainer {
