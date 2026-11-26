@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Library | GamePlanner+</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/collections.css">
     </head>
@@ -62,7 +63,9 @@
                                 </button>
                             </div>
                             <div class="col-4">
-                                <button class="btn btn-purple active w-100">
+                                <button class="btn btn-purple active w-100"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#editPlayingNow">
                                     Edit
                                 </button>
                             </div>
@@ -72,6 +75,36 @@
                                 </button>
                             </div>
                         </div>
+                        <section class="collapse mt-3" id="editPlayingNow">
+                            <h4>Edit Collection</h4>
+                            <section class="mt-4">
+                                <form class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="collectionNameEdit" class="form-label">
+                                            New name
+                                        </label>
+                                        <input type="text" class="form-control" id="collectionNameEdit" placeholder="Speedrunning">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="categoryCollectionEdit" class="form-label">
+                                            New category
+                                        </label>
+                                        <input type="text" class="form-control" id="categoryCollectionEdit" placeholder="FPS">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="collectionDescriptionEdit" class="form-label">
+                                            New description
+                                        </label>
+                                        <textarea class="form-control" id="collectionDescriptionEdit" rows="3" placeholder="Describe your collection..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success">
+                                        Confirm
+                                    </button>
+                                </form>
+                            </section>
+                        </section>
                     </article>
                 </section>
                 <section class="col-12 col-md-6">
@@ -89,7 +122,9 @@
                                 </button>
                             </div>
                             <div class="col-4">
-                                <button class="btn btn-purple active w-100">
+                                <button class="btn btn-purple active w-100"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#editBacklog">
                                     Edit
                                 </button>
                             </div>
@@ -99,6 +134,36 @@
                                 </button>
                             </div>
                         </div>
+                        <section class="collapse mt-3" id="editBacklog">
+                            <h4>Edit Collection</h4>
+                            <section class="mt-4">
+                                <form class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="collectionNameEdit" class="form-label">
+                                            New name
+                                        </label>
+                                        <input type="text" class="form-control" id="collectionNameEdit" placeholder="Speedrunning">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="categoryCollectionEdit" class="form-label">
+                                            New category
+                                        </label>
+                                        <input type="text" class="form-control" id="categoryCollectionEdit" placeholder="FPS">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="collectionDescriptionEdit" class="form-label">
+                                            New description
+                                        </label>
+                                        <textarea class="form-control" id="collectionDescriptionEdit" rows="3" placeholder="Describe your collection..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success">
+                                        Confirm
+                                    </button>
+                                </form>
+                            </section>
+                        </section>
                     </article>
                 </section>
                 <section class="col-12 col-md-6">
@@ -116,7 +181,9 @@
                                 </button>
                             </div>
                             <div class="col-4">
-                                <button class="btn btn-purple active w-100">
+                                <button class="btn btn-purple active w-100"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#editCompleted">
                                     Edit
                                 </button>
                             </div>
@@ -126,6 +193,36 @@
                                 </button>
                             </div>
                         </div>
+                        <section class="collapse mt-3" id="editCompleted">
+                            <h4>Edit Collection</h4>
+                            <section class="mt-4">
+                                <form class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="collectionNameEdit" class="form-label">
+                                            New name
+                                        </label>
+                                        <input type="text" class="form-control" id="collectionNameEdit" placeholder="Speedrunning">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="categoryCollectionEdit" class="form-label">
+                                            New category
+                                        </label>
+                                        <input type="text" class="form-control" id="categoryCollectionEdit" placeholder="FPS">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="collectionDescriptionEdit" class="form-label">
+                                            New description
+                                        </label>
+                                        <textarea class="form-control" id="collectionDescriptionEdit" rows="3" placeholder="Describe your collection..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success">
+                                        Confirm
+                                    </button>
+                                </form>
+                            </section>
+                        </section>
                     </article>
                 </section>
                 <section class="col-12 col-md-6">
@@ -143,7 +240,9 @@
                                 </button>
                             </div>
                             <div class="col-4">
-                                <button class="btn btn-purple active w-100">
+                                <button class="btn btn-purple active w-100"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#editFavourites">
                                     Edit
                                 </button>
                             </div>
@@ -153,6 +252,36 @@
                                 </button>
                             </div>
                         </div>
+                        <section class="collapse mt-3" id="editFavourites">
+                            <h4>Edit Collection</h4>
+                            <section class="mt-4">
+                                <form class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="collectionNameEdit" class="form-label">
+                                            New name
+                                        </label>
+                                        <input type="text" class="form-control" id="collectionNameEdit" placeholder="Speedrunning">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="categoryCollectionEdit" class="form-label">
+                                            New category
+                                        </label>
+                                        <input type="text" class="form-control" id="categoryCollectionEdit" placeholder="FPS">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="collectionDescriptionEdit" class="form-label">
+                                            New description
+                                        </label>
+                                        <textarea class="form-control" id="collectionDescriptionEdit" rows="3" placeholder="Describe your collection..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success">
+                                        Confirm
+                                    </button>
+                                </form>
+                            </section>
+                        </section>
                     </article>
                 </section>
             </section>
